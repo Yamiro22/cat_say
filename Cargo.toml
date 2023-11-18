@@ -1,0 +1,19 @@
+[package]
+name = "cat_say"
+version = "0.1.0"
+edition = "2021"
+authors = ["Yamiro22 <moyamingo1234@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "A catsay cli"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+assert_cmd = "2.0.12"
+clap = { version = "4.4.8", features = ["derive"] }
+colored = "2.0.4"
+predicates = "3.0.4"
+
+[lib]
+name = "cat_say_lib"
+path = "src/lib.rs"
